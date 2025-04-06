@@ -77,5 +77,3 @@ def translate_content(content: str) -> tuple[bool, str]:
     if not (isinstance(result, tuple) and len(result) == 2 and isinstance(result[0], bool) and isinstance(result[1], str)):
         result = (True, content)
     return result
-
-translate_content("这是一条中文消息")
